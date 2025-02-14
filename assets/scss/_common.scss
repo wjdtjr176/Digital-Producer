@@ -1,0 +1,89 @@
+
+
+body{
+    background: #fff;
+    color: #000;
+    font-family: "FoundersGrotesk";
+    font-weight: 300;
+    font-size: 19px;
+    line-height: 1.1;
+    width: 100%;
+    user-select: none;
+    min-width: 1903px;
+    &.scroll{
+        overflow: hidden;
+    }
+}
+
+
+
+
+.loading{
+    position: fixed;
+    background: #fff;
+    z-index: 100;
+    top: 0;left: 0;
+    right: 0;bottom: 0;
+    user-select: none;
+    transition: .3s;
+    &.hide{
+        opacity: 0;
+        visibility: hidden;
+    }
+    .group-number{
+        bottom: 52px;
+        color: #000000d9;
+        font-family: "FoundersGrotesk";
+        font-weight: 500;
+        font-size: 269px;
+        line-height: 80%;
+        margin-top: 42px;
+        position: absolute;
+        left: 0;
+        text-align: center;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+        .number-wrap{
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            height: 230px;
+            &:nth-child(12){
+                margin-right: 50px;
+            }
+            .number-area{
+                animation: up 2s infinite ease-in-out;
+            }
+        }
+        
+    }
+}
+
+
+
+.title-wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.flex{
+    display: flex;
+    font-size: 20px;
+    svg{
+        width: 21px;
+        path{
+            fill: #000;
+        }
+    }
+}
+.headline{
+    font-family: "FoundersGrotesk";
+    font-weight: 500;
+}
+.sub-headline{
+    color: #0000004d;
+    font-family: "FoundersGrotesk";
+    font-weight: 500;
+}
