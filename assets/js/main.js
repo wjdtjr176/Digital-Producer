@@ -182,7 +182,7 @@ worker.to('.sc-worker .video',{
     },
 },'a')
 
-worker.to('.sc-worker .video img:nth-child(1)',{
+worker.to('.sc-worker .video .show',{
     height:'100%'
 })
 worker.to('.sc-worker .video img:nth-child(2)',{
