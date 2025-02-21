@@ -39,6 +39,9 @@ const visualSlide = new Swiper('.sc-visual .swiper',{
 
 
 // 이미지 호버
+
+let x, y, rotationX;
+
 $('.sc-announce').mousemove(function(e){
      x = e.clientX;
      y = e.clientY;
@@ -61,7 +64,7 @@ $('.sc-announce').hover(function(){
 
 
 $('.sc-announce .item').hover(function(){
-    idx = $(this).index();
+    let idx = $(this).index();
     $('.mouse .thumb').eq(idx).addClass('on').siblings().removeClass('on')
 })
 
@@ -73,7 +76,7 @@ gsap.set('.sc-index .desc span',{display:'none'})
 gsap.set('.sc-index .sub-desc',{display:'none'})
 
 
-index = gsap.timeline({
+let index = gsap.timeline({
     scrollTrigger:{
         trigger:".sc-index",
         start:"0% 0%",
