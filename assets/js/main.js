@@ -40,7 +40,7 @@ const visualSlide = new Swiper('.sc-visual .swiper',{
 
 // 이미지 호버
 
-let x, y, rotationX;
+
 
 $('.sc-announce').mousemove(function(e){
      x = e.clientX;
@@ -64,7 +64,7 @@ $('.sc-announce').hover(function(){
 
 
 $('.sc-announce .item').hover(function(){
-    let idx = $(this).index();
+     idx = $(this).index();
     $('.mouse .thumb').eq(idx).addClass('on').siblings().removeClass('on')
 })
 
